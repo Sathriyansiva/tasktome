@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vcssolution.vcs.ADD">
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_gravity="top"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/edit_text_style"
+
+        android:weightSum="1">
+        <EditText
+            android:id="@+id/editText_customer_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:hint="NAME"
+            android:inputType="text"
+            android:maxLength="50"/>
+
+
+        <EditText
+            android:id="@+id/editText_mobile_no"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:hint="FATHER NAME"
+            android:inputType="text"
+            android:maxLength="90"
+            />
+
+
+
+        <EditText
+            android:id="@+id/editText_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:hint="PHONE"
+            android:inputType="number"
+            android:maxLength="10"
+           />
+        <EditText
+            android:id="@+id/editText_nationality"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:hint="NATIONALITY"
+            android:inputType="text"
+            android:maxLength="90"/>
+
+
+        <EditText
+            android:id="@+id/editText_pincode"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:hint="ADDRESS"
+            android:inputType="textMultiLine"
+            android:layout_weight="0.05" />
+
+        <RadioGroup
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:id="@+id/sexRadioGroup"
+            android:gravity="center"
+            android:background="@drawable/edit_text_style"
+            android:checkedButton="@+id/imtNo"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MALE"
+                android:id="@+id/imtNo"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEMALE"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/imtYes" />
+        </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="DOB"
+            android:padding="10dp"
+            />
+        <EditText
+            android:id="@+id/editText_dob"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:onClick="date"
+            android:background="@android:color/transparent"
+
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:layout_weight="10"
+        android:onClick="save"
+        />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:layout_weight="10"
+            android:onClick="cancel"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
